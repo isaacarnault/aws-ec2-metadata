@@ -38,9 +38,9 @@ Services > EC2<br>
 
 - Leave all fields as they're by default, just Enable termination protection.<br>
 
-- Important : click on Advanced Details (here we'll provide out bootstrapped script).<br>
+- Important : click on Advanced Details (here we'll provide our bootstrapped script).<br>
 
-Ues the following Script<br>
+Use the following Script<br>
 
 <details>
 <summary>🔵 See script</summary>
@@ -85,7 +85,7 @@ Please note that the last line of the script will push all files related to your
 
 <b>Next : Configure Security Group</b><br>
 
-- Create a new security group > Security group name: dev-master > Description : Security Group Master > Add Rule : add HTTP ptorotocole to allow listening on Port 80 > Review and launch > Launch > Create New Key Pair > Key Pair Name : EC2KP > Download Key Pair (EC2KP.pem should appear in your Downloads).
+- Create a new security group > Security group name: dev-master > Description : Security Group Master > Add Rule : add HTTP protocole to allow listening on Port 80 > Review and launch > Launch > Create New Key Pair > Key Pair Name : EC2KP > Download Key Pair (EC2KP.pem should appear in your Downloads).
 
 <details>
 <summary>🔴 See output</summary>
@@ -158,13 +158,13 @@ Type "yes" when prompted by the `CLI`<br>
 </p>
 </details>
 
-- Go in root mode : `$ sudo su` and use `$ aws s3 ls`. The last command should return "Unable to locate credentials. You can configure credentials by running "aws configure".<br>
+- Go in root mode : `$ sudo su` and use `$ aws s3 ls`. The last command may return "Unable to locate credentials". You can configure credentials by running "aws configure".<br>
 
 To use your provided credentials use : `$ aws configure` <br>
 
 Remember that you wrote down your `Access Key ID` and `Secret access key` when creating your EC2 Instance. Use the provided credentials (go to your Downloads and check for the credentials.csv file).<br>
 
-- Provide Access Key ID > AWS Secret Access Key > Default region name (use the Availability Zone of your EC2 instance, ie : us-east-1) > default output format : you can use "text" or "json". In this tutorial i'm using "json".<br>
+- Provide Access Key ID > AWS Secret Access Key > Default region name (use the Availability Zone of your EC2 instance, ie : us-east-1) > default output format : you can use "text" or "json". In this tutorial I'm using "json".<br>
 
 `$ aws s3 ls` displays my available buckets. If your buckets do not show up, go to Users > Security credentials > Create a new access key or create a new EC2 instance and restart the procedure in your CLI.<br>
 
@@ -246,4 +246,4 @@ You may also want to save this metadata into a `.txt` file :<br>
 
 <hr>
 
-That's all for now guys. Feel free to fork it and to spread a word about it. Thanks.
+That's all for now guys. Feel free to fork it and to spread the word about it. Thanks.
