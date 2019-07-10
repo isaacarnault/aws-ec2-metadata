@@ -46,15 +46,15 @@ Ues the following Script<br>
 <summary>🔵 See script</summary>
 <p>  
   
-#!/bin/bash
+#!/bin/bash<br><br>
 
-yum update -y
-yum install httpd -y
-service httpd start
-chkconfig httpd on
-cd /var/www/html
-echo "<html><h1>This is a web server from an EC2 bootstraped instance!</h1></html>" > index.html
-aws s3 mb s3://yourbucketname
+yum update -y<br>
+yum install httpd -y<br>
+service httpd start<br>
+chkconfig httpd on<br>
+cd /var/www/html<br>
+echo "<html><h1>This is a web server from an EC2 bootstraped instance!</h1></html>" > index.html<br>
+aws s3 mb s3://yourbucketname<br>
 aws s3 cp index.html s3://yourbucketname
 
 </p>
