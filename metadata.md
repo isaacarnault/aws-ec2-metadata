@@ -109,7 +109,17 @@ Please note that the last line of the script will push all files related to your
 </p>
 </details>
 
-- At this point of the tutorial, you should have one running EC2 instance.
+- At this point of the tutorial, you should have one running EC2 instance. You can check if if was deployed correctly.<br>
+Just use your provided `IPv4 public address` in your web browser.<br>
+
+<details>
+<summary>🔴 See output</summary>
+<p>  
+  
+[![isaac-arnault-AWS-36.png](https://i.postimg.cc/3JpKLykb/isaac-arnault-AWS-36.png)](https://postimg.cc/vcYFTZLW)
+
+</p>
+</details>
 
 <hr>
 
