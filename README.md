@@ -1,6 +1,6 @@
 # Retrieving metadata from a EC2 bootstrapped instance - Hands-on
 
-[![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 I'm currently preparing `AWS` Certified Solution Architect - Associate certificate.<br>
 In the following gist you'll learn how to automate the deployment of an `EC2` instance on `AWS` and retrieve the instance metadata.
